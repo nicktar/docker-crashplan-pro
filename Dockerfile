@@ -4,7 +4,7 @@
 # https://github.com/jlesage/docker-crashplan-pro
 #
 
-FROM ubuntu:18.04
+FROM arm64v8/ubuntu:20.04
 WORKDIR /tmp
 RUN apt update && apt install --no-install-recommends -y build-essential
 COPY uname_wrapper.c /tmp/
